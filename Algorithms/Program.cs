@@ -13,8 +13,8 @@ namespace Algorithms
         {
             // Algorithm1();
             // Algorithm2();
-            // Algorithm3();
-            //WordProblem();
+            //Algorithm3();
+          // WordProblem();
 
 
         }
@@ -23,6 +23,7 @@ namespace Algorithms
         {
             int firstNumber = 0;
             int secondNumber = 0;
+            
             //Sum = firstNumber + secondNumber;
 
             Console.WriteLine("Welcome to My program which allows you check the sum of two integers");
@@ -31,7 +32,15 @@ namespace Algorithms
             firstNumber = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Please enter a second integer");
             secondNumber = Convert.ToInt32(Console.ReadLine());
+            try
+            {
 
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
             if (firstNumber + secondNumber == 30)
             {
                 int sum = firstNumber + secondNumber;
@@ -46,7 +55,8 @@ namespace Algorithms
             }
             else
             {
-                Console.WriteLine("Return false");
+                int Number = firstNumber;
+                Console.WriteLine($" {Number}\n Note: Number should be 30 or sum of the two numbers 30  ");
                 // Console.ReadLine();
             }
             Console.ReadLine();
@@ -58,13 +68,21 @@ namespace Algorithms
             Console.WriteLine("A program that computes the sum of all positive prime numbers that can be in the int C# data type");
             Console.WriteLine("Type in  4,294,967,295");
 
-            uint Number = 0;
+            uint Number = 4294967295;
             Console.ReadLine();
 
             uint sum = 0;
             //for (int i = 0; i < 4000000; i++)
             {
-                bool primeNumber = true;
+                try
+                {
+
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                } bool primeNumber = true;
 
 
                 for (uint firstNum = 2; firstNum < Number; firstNum++)
@@ -80,10 +98,10 @@ namespace Algorithms
                     if (primeNumber)
                     {
                         Console.Write($"\t{firstNum}");
+                    //sum += firstNumber;
+                   // Number++;
                     }
-                    sum += Number;
                 }
-                //Number++;
             }
             Console.WriteLine(sum.ToString());
             Console.ReadLine();
@@ -106,7 +124,15 @@ namespace Algorithms
                 {
                     Console.WriteLine(word[j]);
                 }
-                Console.WriteLine($"\n{word.Length}");
+                try
+                {
+
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }  Console.WriteLine($"\n{word.Length}");
 
                 Console.ReadLine();
             }
@@ -193,6 +219,7 @@ namespace Algorithms
             decimal PMNewsTotal = PMweek1Sales + PMweek2Sales + PMweek3Sales + PMweek4Sales;
             Console.WriteLine($"\tTotal sales after 4 weeks for PMNews is {PMNewsTotal}");
             Console.ReadLine();
+           
 
             // Case Guardian
             Console.WriteLine("Sales for Guardian in week 1 ");
