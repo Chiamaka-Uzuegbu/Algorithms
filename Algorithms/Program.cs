@@ -115,7 +115,7 @@ namespace Algorithms
             string word = Console.ReadLine();
 
 
-            if (word.Contains("s" + "a"))
+            if (word.Contains("sa"))
             {
 
                 word = word.Replace("e", "");
@@ -139,6 +139,7 @@ namespace Algorithms
             else
             {
                 Console.WriteLine("word inputed");
+                Console.WriteLine("Please the word you inputed does not start with sa");
             }
         }
 
